@@ -1,0 +1,31 @@
+/*  TEXT
+color -- memberi warna  
+text-align -- mengatur format paragraf
+text-indent -- memberi indentasi pada paragraf
+text-decoration -- mengatur dekorasi pada teks
+text-transform -- mengubah henis huruf menjadi huruf besar, kecil / capital
+letter-spacing -- mengatur jarak antar huruf
+word-spacing -- mengatur jarak antar kata*/
+
+h1{
+    color: coral;
+    font-size: 50px;
+}
+
+h2{
+    color: #fabc35;
+    font-size: 40px;
+}
+h3{
+    color: rgb(11, 225, 100);
+    font-size: 30px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 100px;
+    text-decoration: overline;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 _ Transition (Part 1)</title>
+    <style>
+        @font-face {
+            font-family: "Alex Brush";
+            src: url(../property/OpenSans-Regular-webfont.woff);
+        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Alex Brush", sans-serif;
+
+      }
+
+      .container {
+        width: 500px;
+        border: 3px solid black;
+        margin: 10px auto;
+      }
+
+      .kotak {
+        width: 100px;
+        height: 100px;
+        background-color: salmon;
+        border-radius: 0 50% 0 50%;
+        text-align: center;
+        font-size: 10px;
+        line-height: 100px;
+        margin: 5px 0;
+        transition: margin-left 3s, transform 3s 2s, background-color 2s 3s;
+      }
+
+      .container:hover .kotak {
+        transform: rotate(720deg);
+        margin-left: 400px;
+        background-color: lightblue;
+      }
+
+      .satu {
+        transition: all 3s 1s ease;
+      }
+      .dua {
+        transition: all 3s 1s ease-in;
+      }
+      .tiga {
+        transition: all 3s 1s ease-out;
+      }
+      .empat {
+        transition: all 3s 1s ease-in-out;
+      }
+      .lima {
+        transition: all 3s 1s linear;
+      }
+      .enam {
+        transition: all 3s 1s cubic-bezier(0.35,-0.95, 0.59, 1.68);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak satu">EASE</div>
+      <div class="kotak dua">EASE IN</div>
+      <div class="kotak tiga">EASE OUT</div>
+      <div class="kotak empat">EASE IN OUT</div>
+      <div class="kotak lima">LINEAR</div>
+      <div class="kotak enam">cubic-bezier</div>
+    </div>
+  </body>
+</html>

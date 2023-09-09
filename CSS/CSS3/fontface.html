@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 _ Font Face</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* di download untuk offline */
+      @font-face {
+        font-family: "Alex Brush";
+        src: url("../property/AlexBrush-Regular.ttf") format("truetype");
+      }
+      /* web font kit */
+      @font-face {
+        font-family: "open_sansregular";
+        src: url("../property/OpenSans-Regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* Web font generator */
+      @font-face {
+        font-family: "alex_brushregular";
+        src: url("../property/alexbrush-regular-webfont.woff2") format("woff2"),
+          url("../property/alexbrush-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1.hasatu {
+        /* Google fonts
+            https://fonts.google.com/             */
+        font-size: 100px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+      }
+      h2.hadua {
+        font-size: 100px;
+        text-align: center;
+        font-family: "Alex Brush", sans-serif;
+      }
+      h3.hatiga {
+        font-size: 100px;
+        text-align: center;
+        font-family: "open_sansregular", sans-serif;
+      }
+      h4.haempat {
+        font-size: 100px;
+        text-align: center;
+        font-family: "alex_brushregular", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hasatu">link google font</h1>
+    <h2 class="hadua">font face</h2>
+    <h3 class="hatiga">Web font kit</h3>
+    <h4 class="haempat">Web Font Generator</h4>
+  </body>
+</html>

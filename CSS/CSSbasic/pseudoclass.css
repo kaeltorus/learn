@@ -1,0 +1,52 @@
+.hello:link {
+  /* style default link atau href*/
+  color: brown;
+}
+
+.hello:hover {
+  /* style ketika kursor mouse berada diaats sebuah link */
+  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.hello:active {
+  /* style ketika sebuah link di klik */
+  font-style: italic;
+}
+
+.hello:visited {
+  /* style ketika sebuah link sudah pernah di kunjungi (dalam browser yang sama) */
+  color: red;
+}
+
+
+li:first-child a{ 
+    /* mengubah style dalam firstchild suatu element*/
+    color: green;
+}
+
+li:last-child a{ 
+    /* mengubah style dalam lastchild suatu element*/
+    color: pink;
+}
+
+li:nth-child(2) a{/* bisa langsung ke posisi x (angka) 
+    atau pakai kelipatan xn (x=angka)
+    atau kelipatan xn + x 
+    atau even odd (ganjil genap)
+    */ 
+    color: green;
+}
+
+li:nth-child(odd) a:hover{
+    color: black;
+}
+
+p:first-of-type{ /* memilih elemen pertama dari sebuah jenis tag*/
+    color: red;
+}
+
+p:last-of-type{ /*memilih elemen terakhir dari sebuah jenis tag*/
+    color: rgb(255, 247, 8);
+}

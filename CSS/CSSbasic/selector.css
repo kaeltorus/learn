@@ -1,0 +1,42 @@
+body{
+    font-family: arial;
+
+}
+
+h1{
+
+    color: aqua;
+}
+
+h2{
+    color: aqua;
+}
+
+/* h1 dan h2 memiliki style yg sama dapat di group menjadi h1,h2{style}*/
+
+/*di baca dari kiri ke kanan*/
+ul li a{
+    color: blanchedalmond;
+}
+
+ol li a{
+    color: red;
+}
+
+
+#p1{ /* # untuk mencari id dalam tag*/
+    color: blue;
+}
+
+.p2{ /* . untuk mencari class dalam tag*/
+    color:blueviolet;
+
+}
+
+.cetak-tebal{
+    font-weight: bold;
+}
+
+p.cetak-tebal{
+    font-size: 30px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 _ Linear Gradient</title>
+    <style>
+        div.satu{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            /* warna awal -> warna akhir */
+            /*  default dari kanan */
+            /* multiple color */
+            background-image: linear-gradient(red,yellow);
+        }
+        div.dua{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            /* multiple color */
+            background-image: linear-gradient(red,yellow,green);
+        }
+        div.tiga{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            /* multiple color */
+            /* manual grading */
+            background-image: linear-gradient(90deg,red,yellow,green);
+        }
+        div.empat{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            /* multiple color */
+            /* manual arah */
+            /* to bottom, to top, to left, to right, 
+            to left top, to left bottom, to right top, to  right bottom */
+            background-image: linear-gradient(to left,red,yellow,green);
+        }
+        div.lima{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            /* multiple color */
+            /* color stop untuk membuat warna tidak seimbang */
+            /* to bottom, to top, to left, to right, 
+            to left top, to left bottom, to right top, to  right bottom */
+            background-image: linear-gradient(to right,red,yellow 63%,green 80%);
+        }
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+    
+</body>
+</html>

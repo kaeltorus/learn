@@ -1,0 +1,35 @@
+div{
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.wewe{
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    margin: 20px auto;
+    /* shortand */
+  /* value pertama atas dan bawah
+  value kedua untuk kiri kanan
+  value ketiga untuk bawah(opsional)
+  value ke empat clockwise atas kanan bawah kiri  */
+  /* padding: 10px 20px 30px 40px; */
+  /* padding tidak bisa diberi nilai negatif dan auto  */
+  padding: 50px;
+  /* value pertama adalah tebal 
+  value kedua style jenis nya
+  value ketiga warna */
+  border: 5px dotted red;
+}
+
+.satu{
+    background-color: blue;
+    padding: 10px;
+    border: 15px  solid red;
+}
+
+.dua{
+    background-color: green;
+    padding: 30px;
+    border: 10px dashed orange;
+}

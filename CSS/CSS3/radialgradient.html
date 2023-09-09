@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 _ Radial Gradient</title>
+    <style>
+      div.satu {
+        width: 600px;
+        height: 300px;
+        margin: 50px auto;
+        background-image: radial-gradient(red, green, blue);
+      }
+      div.dua {
+        width: 600px;
+        height: 300px;
+        margin: 50px auto;
+        /* tipe -> elips / circle 
+            jangkauan -> jarak dari pusat gradasi ke sisi terluarnya
+            * closest corner
+            ** closest-side 
+            *** farthest-corner
+            **** farthest-side
+            posisi -> posisi top bottom left right
+        */
+        background-image: radial-gradient(circle farthest-side at 50px 50px, red, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+  </body>
+</html>

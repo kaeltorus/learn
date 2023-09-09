@@ -1,0 +1,59 @@
+/* div{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+} */
+
+body{
+    height: 2000px;
+}
+
+/* .satu{
+    background-color: lightgreen;
+}
+
+.dua{
+    background-color: blueviolet;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.tiga{
+    background-color: gold;
+}
+
+.container{
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+} */
+
+.kotak{
+    background-color: black;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    opacity: 0.7;
+
+}
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.h1{
+    margin-top: 50px;
+}

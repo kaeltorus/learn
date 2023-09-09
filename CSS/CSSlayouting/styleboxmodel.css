@@ -1,0 +1,36 @@
+/* div {
+  display: inline-block;
+  /* margin horizontal akan memilih jarak yang paling besar sedangkan margin vertikal akan menjumlahkan jarak yang ada } */
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* margin-left: 100px; 
+    margin-top: 30px; 
+    margin-top: 100px; 
+    margin-right: 50px; */
+  /* margin-right: 30px; */
+  
+}
+.dua {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  /* margin-left: 20px; */
+  margin: 50px;
+  /* shortand */
+  /* value pertama atas dan bawah
+  value kedua untuk kiri kanan
+  value ketiga untuk bawah(opsional)
+  value ke empat clockwise atas kananbawah kiri  */
+  /* margin: 50px 100px; */
+/* margin: 50px 100px 30px; */
+/* margin: 10px 20px 30px 40px; */
+
+
+}
+.tiga {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}

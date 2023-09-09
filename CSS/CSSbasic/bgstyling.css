@@ -1,0 +1,12 @@
+body {
+  /* background pola subtlepatterns*/
+  background-color: grey;
+  background-image: url(../property/bg1.png);
+  /* background repeat, x,y,no-repeat*/
+  background-repeat: no-repeat;
+  /* background position kombinasi top/center/bottom left/ center/right*/
+  background-position: top right;
+
+  /*shorthand background 
+  background: grey url(../property/bg1.png) top right no-repeat;*/
+}

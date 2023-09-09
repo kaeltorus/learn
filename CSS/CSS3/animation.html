@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 _ Animation</title>
+    <style>
+      .container {
+        width: 600px;
+        margin: 10px auto;
+        border: 5px solid salmon;
+      }
+
+      .kotak {
+        width: 50px;
+        height: 50px;
+        background-color: burlywood;
+        margin: 5px 0;
+        /* animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [playstate] */
+        /* animation: animasiKotak 2s ease-in-out; langsung dijalankana tanpa trigger apapun ketika selesai di refresh */
+      }
+      .container:hover .kotak {
+        animation: animasiKotak 2s ease-in-out;
+      }
+
+      @keyframes animasiKotak {
+        0% {
+          width: 50px;
+        }
+        50% {
+          width: 600px;
+          height: 100px;
+        }
+        100% {
+          width: 600px;
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak satu"></div>
+    </div>
+  </body>
+</html>

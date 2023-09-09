@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dimensi overflow</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: lightcoral;
+        /* visible default dari element sehingga ketika konten melebihi parentnya maka tetap di perlihatkan
+        auto memberi 'scroll' secara otomatis ketika konten melebihi parentnya sebaliknya ketika tidak melebihi parentnya amaka tidak memunculkan scroll
+        hidden konten yang melebihi parentnya akan tidak terlihat 
+        scroll memberi scroll secara absolut yang berarti ketika sebuah konten tidak melebihi maupun melebihi scroll tetap akan ada*/
+        overflow: auto;
+      }
+
+      div.satu {
+        width: 200px;
+        height: 200px;
+        background-color: lightsalmon;
+      }
+      div.dua {
+        width: 60%;
+        height: auto;
+        background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">
+      <div class="dua">Hello you !</div>
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tempora
+      maiores ex minima et voluptas inventore aliquid saepe corporis? Totam
+      cupiditate quia blanditiis, quae libero aspernatur explicabo doloremque
+      maxime nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Molestiae harum, libero vitae vel dolorem dolore! Iure illo nobis nihil
+      voluptate vitae! Perferendis vitae accusantium optio accusamus cupiditate
+      expedita consequuntur maxime?
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 _ Transform</title>
+    <style>
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+        /* translate() untuk merubah posisi dari element
+        rotate()rotateX()rotateY() untuk memutar elemen berapa derajat dapat horizontal atau vertical
+        scaleX()scaleY()scale() untuk memperbesar ukuran elemen
+        skewX()skewY()skew() untuk membuat elemen menjadi miring
+        matrix() */
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto 0;
+            transition: 1s;
+        }
+        .kotak:hover{
+            /* transform: scale(3); */
+            /* transform: scaleX(3) scaleY(2); */
+            /* transform: rotate(-45deg);  */
+            /* transform: rotate(180deg) rotateX(180deg) rotateY(180deg); */
+            /* transform: skew(30deg);
+            transform: skewY(30deg); */
+            /* transform: translate(50px, 100px); ke kanan 50px ke bawah 100px */
+            /* transform: translateX(50px) translateY(100px); ke kanan 50px ke bawah 100px */
+            transform: scale(2.5) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kotak"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolorem rem quae quisquam ea alias sequi repellendus nobis minima quidem, incidunt animi, mollitia, neque iste voluptate sit ratione? Nemo totam soluta inventore a assumenda voluptatem cupiditate! Quas culpa laboriosam quos praesentium corporis id nesciunt, doloribus asperiores eius explicabo quidem accusantium est nulla excepturi possimus obcaecati! Asperiores consequatur iusto dolorum debitis voluptatem error natus, id veritatis illum delectus neque! Odit modi debitis minus? Enim in numquam voluptatibus corporis nostrum ea veritatis consectetur, perspiciatis quae maxime soluta beatae, dolores consequatur pariatur deserunt nam corrupti aliquid, illum neque. Incidunt, autem. Obcaecati, iure rerum.</p>
+    
+</body>
+</html>
